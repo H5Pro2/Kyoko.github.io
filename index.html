@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<!-- Website Template by freewebsitetemplates.com -->
+<html>
+	<head>
+
+		<meta charset="UTF-8">
+		<title>Game Website Template</title>
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+
+		<meta name="viewport" content="width=device-width, initial-scale=0.5">
+		<style>
+		#overlay {
+			display: block;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 2;
+			cursor: pointer;
+		}
+		#background {
+            display: none;
+            z-index: 2;
+        }
+		td.caution{
+
+			width : 800px;
+			height: 500px;            
+
+			background: rgba(114, 114, 114, 0.226);
+
+			border: 10px groove black;
+			padding: 15px;
+
+			border-left-width: 20px;
+			border-right-width: 20px;
+			border-radius: 20px;            
+
+		}
+		table.caution {
+			/* text-align: center; */
+			margin: 400px 0 0 70px;
+		}
+
+		h2.caution{ 
+			color: rgb(0, 0, 0);
+			font-size: 30px;                 
+			text-align: left;
+			-webkit-text-decoration-color: rgba(0, 0, 0, 0.404);    
+			text-decoration-color: rgba(0, 0, 0, 0.712);
+
+			text-shadow: 0 5px 30px #000000, 0 5px 15px #ff5e5e;
+
+			font-family:"Comic Sans MS", cursive, sans-serif; 
+		}
+
+		h3.caution{ 
+			color: rgb(0, 0, 0);
+			font-size: 40px;                   
+			text-align: left;
+
+			text-decoration: underline;
+		} 
+		div.caution {           
+
+			background: url("images/caution.png");
+			background-size: 100% 100%;
+
+			top: auto;
+			bottom: auto;
+			z-index: -1; 
+
+			display : block;
+			width : 1000px;
+			height: 1000px; 
+			overflow : auto;
+			margin : auto;  
+		}
+		</style>
+
+	</head>
+	<body>
+		<div id="overlay" onclick="off()">
+			<div class="caution">  
+				<table class="caution">
+					<td class="caution">
+						<h2 class="caution">     
+							beware the bot has the ability to delete the allocated channel if too many messages are in it.<br><br>
+
+							that is, if more messages, as specified in the settings, are in the channel,
+							or messages that are too old to delete them automatically,
+							then the bot deletes the channel and rewrites it.
+							<p></p>
+							
+							please check the bot settings and configure the channel in which the bot should be assigned.<br>
+							<h3 class="caution">any liability is subject to the user.</h3>
+						</h2>                    
+					</td>
+				</table>
+			</div>
+		</div>
+
+
+
+
+		<div id="background">
+			<div id="header">
+				<div>
+					<div>
+						<a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+						<!-- <a href="index.html" class="logo"><img src="images/Kyoko_Profilbild.jpg" alt=""></a> -->
+						<ul>
+							<li class="selected">
+								<a href="index.html" id="menu1">home</a>
+							</li>
+							<li>
+								<a href="media.html" id="menu2">media guides</a>
+							</li>
+							<li>
+								<a href="games.html" id="menu3">games</a>
+							</li>
+							<li>
+								<a href="about.html" id="menu4">about</a>
+							</li>
+							<li>
+								<a href="commands.html" id="menu5">commands</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="body">
+				<div>
+					<div>
+						<div class="featured">
+							<img src="images/featured-game.png" alt="">
+						</div>
+						<div class="section">
+							<div>
+								<h3>Welcome to Kyoko</h3><br><br>
+								<div>
+									<p>
+										Kyoko is a small, manga styled music bot with some small features.
+										<br>
+										everything else is under
+										<a href="about.html" class="more">read more</a>
+									</p>
+								</div>
+							</div>
+							<div>
+								<h3>games</h3>
+								<div>
+									<a href="games.html" class="figure"><img src="images/games.jpg" alt=""></a>
+									<span><a href="games.html">This is just a place holder</a></span>
+								</div>
+							</div>
+							<div>
+								<h3>media</h3>
+								<div>
+									<a href="media.html" class="figure"><img src="images/media.png" alt=""></a>
+									<span><a href="media.html">youtube guides</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="footer">
+				<div>
+					<ul>
+						<li id="facebook">
+							<a href="http://freewebsitetemplates.com/go/facebook/">facebook</a>
+						</li>
+						<li id="twitter">
+							<a href="http://freewebsitetemplates.com/go/twitter/">twitter</a>
+						</li>
+						<li id="googleplus">
+							<a href="http://freewebsitetemplates.com/go/googleplus/">googleplus</a>
+						</li>
+					</ul>
+					<p>
+						@ copyright 2012. all rights reserved.
+					</p>
+				</div>
+			</div>				
+		</div>
+		<script>
+			function on() {
+				document.getElementById("overlay").style.display = "block";                  
+			}
+			
+			function off() {
+				document.getElementById("overlay").style.display = "none";
+				document.getElementById("background").style.display = "block";
+			}
+		</script>
+	</body>
+</html>
