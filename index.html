@@ -4,25 +4,25 @@
 	<head>
 
 		<meta charset="UTF-8">
-		<title>Game Website Template</title>
+		<title>Kyoko Website Template</title>
 		<link rel="stylesheet" href="css/style.css" type="text/css">
 
 		<meta name="viewport" content="width=device-width, initial-scale=0.5">
 		<style>
 		#overlay {
-			display: block;
+			display: none;
 			width: 100%;
 			height: 100%;
 			top: 0;
 			left: 0;
 			right: 0;
 			bottom: 0;
-			z-index: 2;
+			z-index: 1;
 			cursor: pointer;
 		}
-		#background {
-            display: none;
-            z-index: 2;
+		#cautionid {
+            display: block;
+            z-index: 1;
         }
 		td.caution{
 
@@ -79,38 +79,20 @@
 			margin : auto;  
 		}
 		</style>
-
 	</head>
-	<body>
-		<div id="overlay" onclick="off()">
-			<div class="caution">  
-				<table class="caution">
-					<td class="caution">
-						<h2 class="caution">     
-							beware the bot has the ability to delete the allocated channel if too many messages are in it.<br><br>
-
-							that is, if more messages, as specified in the settings, are in the channel,
-							or messages that are too old to delete them automatically,
-							then the bot deletes the channel and rewrites it.
-							<p></p>
-							
-							please check the bot settings and configure the channel in which the bot should be assigned.<br>
-							<h3 class="caution">any liability is subject to the user.</h3>
-						</h2>                    
-					</td>
-				</table>
-			</div>
-		</div>
-
-		<!-- https://h5pro2.github.io/Kyoko.github.io/about.html -->
+	<body>	
+		
 
 
 		<div id="background">
+			
+				<li id="cautionid" onclick="off()">
+				</li>
+
 			<div id="header">
 				<div>
 					<div>
 						<a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
-						<!-- <a href="index.html" class="logo"><img src="images/Kyoko_Profilbild.jpg" alt=""></a> -->
 						<ul>
 							<li class="selected">
 								<a href="index.html" id="menu1">home</a>
@@ -150,10 +132,10 @@
 								</div>
 							</div>
 							<div>
-								<h3>games</h3>
+								<h3>in_progress</h3>
 								<div>
-									<a href="games.html" class="figure"><img src="images/games.jpg" alt=""></a>
-									<span><a href="games.html">This is just a place holder</a></span>
+									<a href="in_progress.html" class="figure"><img src="images/games.jpg" alt=""></a>
+									<span><a href="in_progress.html">in_progress</a></span>
 								</div>
 							</div>
 							<div>
@@ -170,13 +152,12 @@
 			<div id="footer">
 				<div>
 					<ul>
-						<li id="facebook">
+						<li id="Kyoko-Musicbot">
 							<a href="https://github.com/H5Pro2/Kyoko-Musicbot">facebook</a>
 						</li>
-						<!-- <li id="twitter">
-							<a href="http://freewebsitetemplates.com/go/twitter/">twitter</a>
-						</li> -->
-						<li id="googleplus">
+
+						</li> 
+						<li id="in_progress">
 							<a href="https://h5pro2.github.io/Kyoko.github.io/in_progress.html">googleplus</a>
 						</li>
 					</ul>
@@ -184,16 +165,39 @@
 						@ copyright 2018. all rights reserved.
 					</p>
 				</div>
-			</div>				
+			</div>		
 		</div>
+
+		<div id="overlay" onclick="on()">
+			<div class="caution">  
+				<table class="caution">
+					<td class="caution">
+						<h2 class="caution">     
+							beware the bot has the ability to delete the allocated channel if too many messages are in it.<br><br>
+
+							that is, if more messages, as specified in the settings, are in the channel,
+							or messages that are too old to delete them automatically,
+							then the bot deletes the channel and rewrites it.
+							<p></p>
+							
+							please check the bot settings and configure the channel in which the bot should be assigned.<br>
+							<h3 class="caution">any liability is subject to the user.</h3>
+						</h2>                    
+					</td>
+				</table>
+			</div>
+		</div>	
+			
 		<script>
-			function on() {
-				document.getElementById("overlay").style.display = "block";                  
+			function on() {					
+				document.getElementById("cautionid").style.display = "block";
+				document.getElementById("background").style.display = "block"; 		
 			}
 			
-			function off() {
-				document.getElementById("overlay").style.display = "none";
-				document.getElementById("background").style.display = "block";
+			function off() {					
+				document.getElementById("cautionid").style.display = "none";
+				document.getElementById("background").style.display = "none";
+				document.getElementById("overlay").style.display = "block";
 			}
 		</script>
 	</body>

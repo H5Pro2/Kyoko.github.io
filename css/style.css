@@ -51,6 +51,10 @@ body {
 #header a.logo img {
 	border: 0;
 	display: block;
+
+	max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
 }
 #header ul {
 	background: url(../images/bg-navigation.png) no-repeat center center;
@@ -160,6 +164,10 @@ body {
 	position: absolute;
 	top: -112px;
 	z-index: 1;
+
+	max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
 }
 #body div div .section {
 	background: #0a0a0a url(../images/gradient.png) repeat-x bottom center;
@@ -179,7 +187,7 @@ body {
 	width: 440px;
 }
 #body div div .section div h4 {
-	background: #070707 url(../images/gradient2.png) repeat-x top center;
+	/* background: #070707 url(../images/gradient2.png) repeat-x top center; */
 	border: 1px solid #22272a;
 	color: #fff;
 	font-size: 14px;
@@ -252,6 +260,10 @@ body {
 #body div div .section div div a.figure img {
 	border: 1px solid #000;
 	display: block;
+
+	max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
 }
 #body div div .section div div span {
 	background: #181a1a url(../images/gradient4.png) repeat-x bottom left;
@@ -274,7 +286,7 @@ body {
 #body div div .section div div span a:hover {
 	color: #fff;
 }
-#body .media, #body .games, #body .about, #body .commands {
+#body .media, #body .in_progress, #body .about, #body .commands {
 	margin: 0;
 	padding: 24px 0;
 }
@@ -338,6 +350,10 @@ body {
 #body .media div div ul li a.figure img {
 	border: 1px solid #000;
 	display: block;
+
+	max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
 }
 #body .media div div ul li span {
 	background: #181a1a url(../images/gradient4.png) repeat-x bottom left;
@@ -388,6 +404,10 @@ body {
 #body .media .article ul li a.figure img {
 	border: 1px solid #000;
 	display: block;
+
+	max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
 }
 #body .media .article ul li p {
 	font-size: 12px;
@@ -400,18 +420,19 @@ body {
 #body .media .article ul li p a:hover {
 	color: #a3a3a3;
 }
-#body .games {
+/* ---------------------------------- */
+#body .in_progress {
 	overflow: hidden;
 }
-#body .games div {
+#body .in_progress div {
 	margin: 0;
 	padding: 0;
 }
-#body .games h3 {
+#body .in_progress h3 {
 	background: #070707 url(../images/gradient3.png) repeat-x top center;
 	border: 1px solid #22272a;
 	color: #fff;
-	font-family: 'Philosopher-Bold';
+	/* font-family: 'Philosopher-Bold'; */
 	font-size: 16px;
 	font-weight: normal;
 	height: 50px;
@@ -421,100 +442,103 @@ body {
 	padding: 0 19px;
 	text-transform: uppercase;
 }
-#body .games div ul {
+#body .in_progress div ul {
 	background: #181818;
 	border: 1px solid #22272a;
-	margin: 0;
-	padding: 0;
+	margin: auto;
+	padding: auto;
 }
-#body .games div ul li {
-	border: 1px solid #22272a;
-	list-style: none;
-	margin: 0;
-	padding: 0;
+#body .in_progress div ul li {
+	color: rgb(138, 138, 138);
+	list-style: square;
 }
-#body .games div ul li a.figure {
+/* ---------------------------------- */
+#body .in_progress div ul li a.figure {
 	display: block;
-	margin: 0;
-	padding: 0;
 }
-#body .games div ul li a.figure:hover {
+#body .in_progress div ul li a.figure:hover {
 	opacity: 0.8;
 }
-#body .games div ul li a.figure img {
+#body .in_progress div ul li a.figure img {
 	border: 1px solid #000;
 	display: block;
+
+	max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
 }
-#body .games div ul li span {
+/* ---------------------------------- */
+#body .in_progress div ul li span {
 	background: #181a1a url(../images/gradient3.png) repeat-x bottom left;
 	border-top: 1px solid #22272a;
 	display: block;
 }
-#body .games div ul li span a {
+#body .in_progress div ul li span a {
 	color: #a7a9ac;
 	display: block;
 	margin: 0;
 	padding: 0 9px;
 	text-decoration: none;
+
 }
-#body .games div ul li span a:hover {
+#body .in_progress div ul li span a:hover {
 	color: #fff;
 }
-#body .games .content {
+#body .in_progress .content {
 	background: url(../images/border.gif) repeat-x top left;
 	float: left;
 	margin: 0 0 0 19px;
 	padding: 3px 0 0;
-	width: 470px;
+	width: 450px;
 }
-#body .games .content ul {
+#body .in_progress .content ul {
 	padding: 16px 19px 1px;
 }
-#body .games .content ul li {
+#body .in_progress .content ul li {
 	margin: 0 0 20px;
 }
-#body .games .content ul li span a {
+#body .in_progress .content ul li span a {
 	font-size: 14px;
 	height: 48px;
 	line-height: 48px;
+	
 }
-#body .games .aside {
+#body .in_progress .aside {
 	background: url(../images/border.gif) repeat-x top left;
 	float: left;
-	margin: 0 0 0 30px;
+	margin: 0 0 0 19px;
 	padding: 3px 0 0;
-	width: 420px;
+	width: 450px;
 }
-#body .games .aside ul {
- *min-height: 568px;
-	overflow: hidden;
-	padding: 5px 8px 11px;
+#body .in_progress .aside ul {
+	padding: 16px 19px 1px;
+
 }
-#body .games .aside ul li {
-	float: left;
-	margin: 11px 10px;
-	width: 178px;
+#body .in_progress .aside ul li {
+	margin: 0 0 20px;
+
 }
-#body .games .aside ul li span a {
-	font-size: 12px;
-	height: 38px;
-	line-height: 38px;
-	text-align: center;
+#body .in_progress .aside ul li span a {
+	font-size: 14px;
+	height: 48px;
+	line-height: 48px;
+
 }
-#body .games .article {
+/* ---------------------------------- */
+#body .in_progress .article {
 	clear: both;
 	float: left;
 	width: 960px;
 }
-#body .games .article p {
+#body .in_progress .article p {
 	font-size: 12px;
 	line-height: 24px;
 	padding: 11px 20px 0;
 }
-#body .games .article p a {
+#body .in_progress .article p a {
 	color: #797979;
 }
-#body .games .article p a:hover {
+#body .in_progress .article p a:hover {
 	color: #a3a3a3;
 }
 /* ------------------------------------------- */
@@ -522,25 +546,26 @@ body {
 	overflow: hidden;
 }
 #body .about ul {
-	margin: 0;
-	padding: 0;
+	margin: -20px -20px 0;
+	padding: 20px 20px 0;
 }
-#body .about ol il{
-	background: url(../images/border.gif) repeat-x top left;
-	/* list-style: none; */
-	/* margin: 0 0 4px; */
-	/* padding: 0px 4px 4px; */
-	
+/* #body .about ol il{
+	background: url(../images/border.gif) repeat-x top left;	
+} */
+
+#body .about2 ol{
+	margin: 0 -20px 0;
+	/* padding: 20px 20px 0;	 */
 }
 #body .about2{
 	background: url(../images/border.gif) repeat-x top left;
 	list-style: none;
-	margin: 0px 0px 20px;
 	padding: 0 0 20px;
 	text-transform: capitalize;
 	font-family: 'Philosopher-Regular';
 	color: rgba(255, 255, 255, 0.650);
 	line-height: 25px;
+	
 }
 #body .about ul li h3 {
 	background: #070707 url(../images/gradient3.png) repeat-x top center;
@@ -554,6 +579,7 @@ body {
 	margin: 0 0 1px;
 	padding: 0 19px;
 	text-transform: capitalize;
+	
 }
 #body .about ul li div {
 	background: #181818;
@@ -561,10 +587,12 @@ body {
 	margin: 0;
 	min-height: 250px;
 	padding: 11px 19px;
+	
 }
 #body .about ul li div p {
 	line-height: 20px;
-	padding: 0 0 28px;
+	padding: 0 0 20px;
+	
 }
 #body .about ul li div p span {
 	font-size: 20;
@@ -573,7 +601,7 @@ body {
 }
 #body .about ul li div > span {
 	text-transform: uppercase;
-	line-height: 24px;
+	line-height: 20px;
 }
 #body .about .content {
 	float: left;
@@ -585,7 +613,20 @@ body {
 	float: left;
 	margin: 0 0 0 20px;
 	padding: 0;
-	width: 340px;
+	width: 560px;
+}
+
+#body .about .content2 {
+	float: left;
+	margin: 0 0 0 20px;
+	padding: 0;
+	width: 550px;
+}
+#body .about .aside2 {
+	float: left;
+	margin: 0 0 0 20px;
+	padding: 0;
+	width: 350px;
 }
 /* ---------------------------------------- */
 #body .commands {
@@ -682,6 +723,10 @@ body {
 #body .commands .content ul li .article a.figure img {
 	border: 1px solid #000;
 	display: block;
+
+	max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
 }
 #body .commands .content ul li .article p {
 	line-height: 24px;
@@ -800,6 +845,26 @@ body {
 	color: #fff;
 }
 /* ---------------------------------------- */
+#cautionid {
+	background: url(../images/caution_buttom.png) no-repeat;
+	background-size: 150px;
+	display: block;
+	float: left;
+	list-style: none;
+	margin: 15px 50px;
+	padding: 0;
+	
+	line-height: 73px;
+	height: 150px;
+	width: 150px;
+
+	text-decoration: none;
+	text-indent: -99999px;
+
+	cursor: pointer;
+	
+}
+/* ---------------------------------------- */
 #footer {
 	background: url(../images/bg-footer2.png) repeat-x bottom left;
 	margin: 0;
@@ -822,7 +887,7 @@ body {
 	display: block;
 	float: left;
 	list-style: none;
-	margin: 0 22px;
+	margin: 0 50px;
 	padding: 0;
 }
 #footer ul li a {
@@ -835,22 +900,22 @@ body {
 	text-indent: -99999px;
 	width: 73px;
 }
-#footer ul #facebook a {
+#footer ul #Kyoko-Musicbot a {
 	background-position: 0 0;
 }
-#footer ul #facebook a:hover {
+#footer ul #Kyoko-Musicbot a:hover {
 	background-position: -78px 0;
 }
-#footer ul #twitter a {
+#footer ul #noch_offen a {
 	background-position: 0 -78px;
 }
-#footer ul #twitter a:hover {
+#footer ul #noch_offen a:hover {
 	background-position: -78px -78px;
 }
-#footer ul #googleplus a {
+#footer ul #in_progress a {
 	background-position: 0 -156px;
 }
-#footer ul #googleplus a:hover {
+#footer ul #in_progress a:hover {
 	background-position: -78px -156px;
 }
 #footer p {
@@ -860,4 +925,20 @@ body {
 	padding: 0;
 	text-align: center;
 	text-transform: capitalize;
+}
+
+
+h3.y{ 
+
+	color: rgb(0, 0, 0);
+	font-size: 20px;                   
+	text-align: left;
+}
+
+h3.z{ 
+
+	color: rgb(0, 0, 0);
+	text-shadow: 0px 0px 25px #ff00c87c, 0px 0px 25px #00c3ff8c;
+	font-size: 20px;                   
+	text-align: left;
 }

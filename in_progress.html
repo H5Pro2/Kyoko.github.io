@@ -1,108 +1,215 @@
 <!DOCTYPE HTML>
 <!-- Website Template by freewebsitetemplates.com -->
 <html>
-<head>
-	<meta charset="UTF-8">
-	<title>Games - Game Website Template</title>
-	<link rel="stylesheet" href="css/style.css" type="text/css">
-</head>
-<body>
-	<div id="background">
-		<div id="header">
-			<div>
+	<head>
+		<meta charset="UTF-8">
+		<title>in progress - Kyoko Website Template</title>
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+
+		<meta name="viewport" content="width=device-width, initial-scale=0.5">
+		<style>
+			#overlay {
+				display: none;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				z-index: 1;
+				cursor: pointer;
+			}
+			#background {
+				display: block;
+				z-index: 1;
+			}
+		td.caution{
+
+			width : 800px;
+			height: 500px;            
+
+			background: rgba(114, 114, 114, 0.226);
+
+			border: 10px groove black;
+			padding: 15px;
+
+			border-left-width: 20px;
+			border-right-width: 20px;
+			border-radius: 20px;            
+
+		}
+		table.caution {
+			/* text-align: center; */
+			margin: 400px 0 0 70px;
+		}
+
+		h2.caution{ 
+			color: rgb(0, 0, 0);
+			font-size: 30px;                 
+			text-align: left;
+			-webkit-text-decoration-color: rgba(0, 0, 0, 0.404);    
+			text-decoration-color: rgba(0, 0, 0, 0.712);
+
+			text-shadow: 0 5px 30px #000000, 0 5px 15px #ff5e5e;
+
+			font-family:"Comic Sans MS", cursive, sans-serif; 
+		}
+
+		h3.caution{ 
+			color: rgb(0, 0, 0);
+			font-size: 40px;                   
+			text-align: left;
+
+			text-decoration: underline;
+		} 
+		div.caution {           
+
+			background: url("images/caution.png");
+			background-size: 100% 100%;
+
+			top: auto;
+			bottom: auto;
+			z-index: -1; 
+
+			display : block;
+			width : 1000px;
+			height: 1000px; 
+			overflow : auto;
+			margin : auto;  
+		}
+		</style>
+	</head>
+	<body>
+		<div id="background">
+
+			<li id="cautionid" onclick="off()">
+			</li>
+
+			<div id="header">
 				<div>
-					<a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
-					<ul>
-						<li>
-							<a href="index.html" id="menu1">home</a>
-						</li>
-						<li>
-							<a href="media.html" id="menu2">media guides</a>
-						</li>
-						<li class="selected">
-							<a href="in_progress.html" id="menu3">in progress</a>
-						</li>
-						<li>
-							<a href="about.html" id="menu4">about</a>
-						</li>
-						<li>
-							<a href="commands.html" id="menu5">commands</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div id="body">
-			<div>
-				<div>
-					<div class="games">
-						<div class="content">
-							<h3>best games</h3>
-							<ul>
-								<li>
-									<a href="#" class="figure"><img src="images/best-game1.jpg" alt=""></a> <span><a href="#">This is just a place holder</a></span>
-								</li>
-								<li>
-									<a href="#" class="figure"><img src="images/best-game2.jpg" alt=""></a> <span><a href="#">This is just a place holder</a></span>
-								</li>
-							</ul>
-						</div>
-						<!-- <div class="aside">
-							<h3>other games</h3>
-							<ul>
-								<li>
-									<a href="#" class="figure"><img src="images/game1.jpg" alt=""></a>
-									<span><a href="#">This is just a place holder</a></span>
-								</li>
-								<li>
-									<a href="#" class="figure"><img src="images/game2.jpg" alt=""></a>
-									<span><a href="#">This is just a place holder</a></span>
-								</li>
-								<li>
-									<a href="#" class="figure"><img src="images/game3.jpg" alt=""></a>
-									<span><a href="#">This is just a place holder</a></span>
-								</li>
-								<li>
-									<a href="#" class="figure"><img src="images/game4.jpg" alt=""></a>
-									<span><a href="#">This is just a place holder</a></span>
-								</li>
-								<li>
-									<a href="#" class="figure"><img src="images/game5.jpg" alt=""></a>
-									<span><a href="#">This is just a place holder</a></span>
-								</li>
-								<li>
-									<a href="#" class="figure"><img src="images/game6.jpg" alt=""></a>
-									<span><a href="#">This is just a place holder</a></span>
-								</li>
-							</ul>
-						</div> -->
-						<!-- <div class="article">
-							<p>
-								This website template has been designed by <a href="http://www.freewebsitetemplates.com/">Free Website Templates</a> for you, for free. You can replace all this text with your own text. You can remove any link to our website from this website template, you're free to use this website template without linking back to us. If you're having problems editing this website template, then don't hesitate to ask for help on the <a href="http://www.freewebsitetemplates.com/forums/">Forum</a>.
-							</p>
-						</div> -->
+					<div>
+						<a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+						<ul>
+							<li>
+								<a href="index.html" id="menu1">home</a>
+							</li>
+							<li>
+								<a href="media.html" id="menu2">media guides</a>
+							</li>
+							<li class="selected">
+								<a href="in_progress.html" id="menu3">in progress</a>
+							</li>
+							<li>
+								<a href="about.html" id="menu4">about</a>
+							</li>
+							<li>
+								<a href="commands.html" id="menu5">commands</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div id="footer">
-			<div>
-				<ul>
-					<li id="facebook">
-						<!-- <a href="http://freewebsitetemplates.com/go/facebook/">facebook</a> -->
-					</li>
-					<!-- <li id="twitter">
-						<a href="http://freewebsitetemplates.com/go/twitter/">twitter</a>
-					</li> -->
-					<li id="googleplus">
-						<!-- <a href="http://freewebsitetemplates.com/go/googleplus/">googleplus</a> -->
-					</li>
-				</ul>
-				<p>
-					@ copyright 2018. all rights reserved.
-				</p>
+			<div id="body">
+				<div>
+					<div>
+						<div class="in_progress">
+							<div class="content">
+								<h3>Kyokos feature</h3>
+								<ul>
+									<li>
+										<strong>You can save your own music playlist, <br>this is an account tied and each user can create their own individual list.</li><br>
+										<li><strong>You can delete individual segments of the play list and add new urls.</li><br>
+										<li><strong>You can also specify how many songs can be uploaded to the playlist.</li><br>                        
+										<li><strong>You can specify the basic setting of the volume. <br>Say how loud the bot should be in the overall attitude.</li><br>
+										<li><strong>It is possible to specify a bot name. This will be applied to all bot messages.</li><br>
+										<li><strong>You can display a emoji play bar, <br>with emoji'`s that you have self-esteemed and uploaded or used by made template this is present in the images.</li><br>
+										<li><strong>You can specify the bot channel, <br>so in wechem channel the bot is bound.</li><br>
+										<li><strong>You can have the help and your favorite list sent privately or you can play in the bot channel.<br>
+									</li>
+									<li>
+										<a href="#" class="figure"><img src="images/manga2.jpg" alt=""></a> <span><a href="#">in_progress</a></span>
+									</li>
+								</ul>
+							</div>
+							<div class="aside">
+								<h3>Kyokos Server Tool</h3>
+								<ul>
+								
+									<h3 class="z">
+										this tool support your server
+									</h3>  <br><br>
+								
+									<li><strong style="color: rgba(255, 255, 0, 0.842)" >[ Run ]</strong> ---> Runing the Server </li>
+									<li><strong style="color: rgba(255, 255, 0, 0.842)" >[ Exit ]</strong> ---> Exit the Server</li>
+									<li><strong style="color: rgba(255, 255, 0, 0.842)" >[ Restart ]</strong> ---> Restart the Server</li>
+									<li><strong style="color: rgba(255, 255, 0, 0.842)" >[ Uptade ]</strong> ---> Uptade the Server npm files</li> 
+									<li><strong style="color: rgba(255, 255, 0, 0.842)" >[ Uptade list ]</strong> ---> Uptade the list view   
+									<p></p><br><br>
+											
+										You can also use it to manage the user list.<br>
+										double-click to open with Editor or Notepad ++ to edit,<br>
+										or delete files with the delete buttom.<br>
+										
+									</li>
+									<li>
+										<a href="#" class="figure"><img src="images/manga1.jpg" alt=""></a> <span><a href="#">in_progress</a></span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="footer">
+				<div>
+					<ul>
+						<li id="Kyoko-Musicbot">
+							<a href="https://github.com/H5Pro2/Kyoko-Musicbot">facebook</a>
+						</li>
+
+						</li> 
+						<li id="in_progress">
+							<a href="https://h5pro2.github.io/Kyoko.github.io/in_progress.html">googleplus</a>
+						</li>
+					</ul>
+					<p>
+						@ copyright 2018. all rights reserved.
+					</p>
+				</div>
 			</div>
 		</div>
-	</div>
-</body>
+
+		<div id="overlay" onclick="on()">
+			<div class="caution">  
+				<table class="caution">
+					<td class="caution">
+						<h2 class="caution">     
+							beware the bot has the ability to delete the allocated channel if too many messages are in it.<br><br>
+
+							that is, if more messages, as specified in the settings, are in the channel,
+							or messages that are too old to delete them automatically,
+							then the bot deletes the channel and rewrites it.
+							<p></p>
+							
+							please check the bot settings and configure the channel in which the bot should be assigned.<br>
+							<h3 class="caution">any liability is subject to the user.</h3>
+						</h2>                    
+					</td>
+				</table>
+			</div>
+		</div>	
+			
+		<script>
+			function on() {					
+				document.getElementById("cautionid").style.display = "block";
+				document.getElementById("background").style.display = "block"; 		
+			}
+			
+			function off() {					
+				document.getElementById("cautionid").style.display = "none";
+				document.getElementById("background").style.display = "none";
+				document.getElementById("overlay").style.display = "block";
+			}
+		</script>
+	</body>
 </html>

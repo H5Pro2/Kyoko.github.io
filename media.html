@@ -3,11 +3,88 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Media - Game Website Template</title>
+	<title>Media - Kyoko Website Template</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=0.5">
+	<style>
+		#overlay {
+			display: none;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 1;
+			cursor: pointer;
+		}
+		#background {
+            display: block;
+            z-index: 1;
+        }
+	td.caution{
+
+		width : 800px;
+		height: 500px;            
+
+		background: rgba(114, 114, 114, 0.226);
+
+		border: 10px groove black;
+		padding: 15px;
+
+		border-left-width: 20px;
+		border-right-width: 20px;
+		border-radius: 20px;            
+
+	}
+	table.caution {
+		/* text-align: center; */
+		margin: 400px 0 0 70px;
+	}
+
+	h2.caution{ 
+		color: rgb(0, 0, 0);
+		font-size: 30px;                 
+		text-align: left;
+		-webkit-text-decoration-color: rgba(0, 0, 0, 0.404);    
+		text-decoration-color: rgba(0, 0, 0, 0.712);
+
+		text-shadow: 0 5px 30px #000000, 0 5px 15px #ff5e5e;
+
+		font-family:"Comic Sans MS", cursive, sans-serif; 
+	}
+
+	h3.caution{ 
+		color: rgb(0, 0, 0);
+		font-size: 40px;                   
+		text-align: left;
+
+		text-decoration: underline;
+	} 
+	div.caution {           
+
+		background: url("images/caution.png");
+		background-size: 100% 100%;
+
+		top: auto;
+		bottom: auto;
+		z-index: -1; 
+
+		display : block;
+		width : 1000px;
+		height: 1000px; 
+		overflow : auto;
+		margin : auto;  
+	}
+	</style>
 </head>
 <body>
 	<div id="background">
+
+		<li id="cautionid" onclick="off()">
+		</li>
+	
 		<div id="header">
 			<div>
 				<div>
@@ -44,19 +121,19 @@
 										<!-- https://www.youtube.com/watch?v=pP4zvduVAqo -->
 										<!-- <a href="#" class="figure"><img src="images/wallpaper1.jpg" alt=""></a> -->
 										<iframe width="410" height="300" src="https://www.youtube.com/embed/pP4zvduVAqo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-										<!-- <span><a href="#">This is just a place holder</a></span> -->
+										<!-- <span><a href="#">in_progress</a></span> -->
 									</li>
 									<!-- <li>
 										<a href="#" class="figure"><img src="images/wallpaper2.jpg" alt=""></a>
-										<span><a href="#">This is just a place holder</a></span>
+										<span><a href="#">in_progress</a></span>
 									</li>
 									<li>
 										<a href="#" class="figure"><img src="images/wallpaper3.jpg" alt=""></a>
-										<span><a href="#">This is just a place holder</a></span>
+										<span><a href="#">in_progress</a></span>
 									</li>
 									<li>
 										<a href="#" class="figure"><img src="images/wallpaper4.jpg" alt=""></a>
-										<span><a href="#">This is just a place holder</a></span>
+										<span><a href="#">in_progress</a></span>
 									</li> -->
 								</ul>
 							</div>
@@ -65,25 +142,25 @@
 								<ul>
 									<li>
 										<iframe width="410" height="300" src="https://www.youtube.com/embed/ohnaTEpDvjo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-										<!-- <span><a href="#">This is just a place holder</a></span> -->
+										<!-- <span><a href="#">in_progress</a></span> -->
 									</li>
 									<!-- <li>
 										<a href="#" class="figure"><img src="images/video2.jpg" alt=""></a>
-										<span><a href="#">This is just a place holder</a></span>
+										<span><a href="#">in_progress</a></span>
 									</li>
 									<li>
 										<a href="#" class="figure"><img src="images/video3.jpg" alt=""></a>
-										<span><a href="#">This is just a place holder</a></span>
+										<span><a href="#">in_progress</a></span>
 									</li>
 									<li>
 										<a href="#" class="figure"><img src="images/video4.jpg" alt=""></a>
-										<span><a href="#">This is just a place holder</a></span>
+										<span><a href="#">in_progress</a></span>
 									</li> -->
 								</ul>
 							</div>
 						</div>
 						<div class="article">
-							<h3>this is just a place holder</h3>
+							<h3>in_progress</h3>
 							<ul>
 								<li>
 									<a href="#" class="figure"><img src="images/media2.jpg" alt=""></a>
@@ -106,14 +183,13 @@
 		<div id="footer">
 			<div>
 				<ul>
-					<li id="facebook">
-						<!-- <a href="http://freewebsitetemplates.com/go/facebook/">facebook</a> -->
+					<li id="Kyoko-Musicbot">
+						<a href="https://github.com/H5Pro2/Kyoko-Musicbot">facebook</a>
 					</li>
-					<!-- <li id="twitter">
-						<a href="http://freewebsitetemplates.com/go/twitter/">twitter</a>
-					</li> -->
-					<li id="googleplus">
-						<!-- <a href="http://freewebsitetemplates.com/go/googleplus/">googleplus</a> -->
+
+					</li> 
+					<li id="in_progress">
+						<a href="https://h5pro2.github.io/Kyoko.github.io/in_progress.html">googleplus</a>
 					</li>
 				</ul>
 				<p>
@@ -122,5 +198,38 @@
 			</div>
 		</div>
 	</div>
-</body>
+
+	<div id="overlay" onclick="on()">
+			<div class="caution">  
+				<table class="caution">
+					<td class="caution">
+						<h2 class="caution">     
+							beware the bot has the ability to delete the allocated channel if too many messages are in it.<br><br>
+
+							that is, if more messages, as specified in the settings, are in the channel,
+							or messages that are too old to delete them automatically,
+							then the bot deletes the channel and rewrites it.
+							<p></p>
+							
+							please check the bot settings and configure the channel in which the bot should be assigned.<br>
+							<h3 class="caution">any liability is subject to the user.</h3>
+						</h2>                    
+					</td>
+				</table>
+			</div>
+		</div>	
+			
+		<script>
+			function on() {					
+				document.getElementById("cautionid").style.display = "block";
+				document.getElementById("background").style.display = "block"; 		
+			}
+			
+			function off() {					
+				document.getElementById("cautionid").style.display = "none";
+				document.getElementById("background").style.display = "none";
+				document.getElementById("overlay").style.display = "block";
+			}
+		</script>
+	</body>
 </html>
