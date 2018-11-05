@@ -524,6 +524,10 @@ body {
 	line-height: 48px;
 
 }
+
+#body .in_progress .content .aside img{
+	font-size: 14px;
+}
 /* ---------------------------------- */
 #body .in_progress .article {
 	clear: both;
