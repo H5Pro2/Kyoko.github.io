@@ -490,7 +490,9 @@ body {
 	margin: 0 0 0 19px;
 	padding: 3px 0 0;
 	width: 450px;
-}
+	font-size: 16px;
+	font-family: 'Gill Sans';
+}	
 #body .in_progress .content ul {
 	padding: 16px 19px 1px;
 }
@@ -509,6 +511,8 @@ body {
 	margin: 0 0 0 19px;
 	padding: 3px 0 0;
 	width: 450px;
+	font-size: 16px;
+	font-family: 'Gill Sans';
 }
 #body .in_progress .aside ul {
 	padding: 16px 19px 1px;
@@ -568,7 +572,19 @@ body {
 	text-transform: capitalize;
 	font-family: 'Philosopher-Regular';
 	color: rgba(255, 255, 255, 0.650);
-	line-height: 25px;
+	line-height: 25px;	
+}
+
+#body .about3 {
+	color: rgb(255, 255, 255);
+	background: url(../images/border.gif) repeat-x top left;
+	list-style: none;
+	padding: 0 0 50px;
+	text-transform: inherit;
+	font-family: 'Lucida Sans Unicode';
+	font-size: 20px;
+	
+	line-height: 50px;
 	
 }
 #body .about ul li h3 {
