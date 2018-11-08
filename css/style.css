@@ -9,6 +9,20 @@
 	src: url('../fonts/Philosopher-Bold/Philosopher-Bold.eot');
 	src: url('../fonts/Philosopher-Bold/Philosopher-Bold.woff') format('woff'), url('../fonts/Philosopher-Bold/Philosopher-Bold.ttf') format('truetype'), url('../fonts/Philosopher-Bold/Philosopher-Bold.svg') format('svg');
 }
+/* ---------------------------------------- */
+#cautionid {
+	background: url(../images/caution_buttom.png) repeat;
+	background-size: 150px;
+	float: left;
+	list-style: none;
+	margin: -30px auto ;
+	
+	line-height: 1;
+	height: 100px;
+	width: 150px;
+	cursor: pointer;
+}
+/* ---------------------------------------- */
 body {
 	background: url(../images/bg-body.jpg) repeat;
 	color: #727272;
@@ -286,9 +300,9 @@ body {
 #body div div .section div div span a:hover {
 	color: #fff;
 }
-#body .media, #body .in_progress, #body .about, #body .commands {
+#body .media, #body .feature_side, #body .about, #body .commands {
 	margin: 0;
-	padding: 24px 0;
+	padding: 10px 0;
 }
 #body .media > div {
 	margin: 0;
@@ -421,14 +435,17 @@ body {
 	color: #a3a3a3;
 }
 /* ---------------------------------- */
-#body .in_progress {
-	overflow: hidden;
+#body .feature_side {
+	overflow: hidden;	
+	background: #070707 url(../images/top_background.jpg) repeat-y top center;
+	background-size: 800px;
+	background-position-y: center;
 }
-#body .in_progress div {
+#body .feature_side div {
 	margin: 0;
 	padding: 0;
 }
-#body .in_progress h3 {
+#body .feature_side h3 {
 	background: #070707 url(../images/gradient3.png) repeat-x top center;
 	border: 1px solid #22272a;
 	color: #fff;
@@ -442,49 +459,47 @@ body {
 	padding: 0 19px;
 	text-transform: uppercase;
 }
-#body .in_progress div ul {
+#body .feature_side div ul {
 	background: #181818;
 	border: 1px solid #22272a;
 	margin: auto;
 	padding: auto;
 }
-#body .in_progress div ul li {
+#body .feature_side div ul li {
 	color: rgb(138, 138, 138);
 	list-style: square;
 }
 /* ---------------------------------- */
-#body .in_progress div ul li a.figure {
-	display: block;
-}
-#body .in_progress div ul li a.figure:hover {
-	opacity: 0.8;
-}
-#body .in_progress div ul li a.figure img {
+#body .feature_side div ul li img {
 	border: 1px solid #000;
 	display: block;
 
 	max-width: 100%;
+    max-height: 100%;
     height: auto;
-    width: auto\9; /* ie8 */
+    width: auto\9;  /*ie8 */
+}
+#body .feature_side .content_playerskill ul {
+	max-width: 100%;
+    max-height: 100%;
+    height: auto;
+	width: auto\9;  /*ie8 */
+	margin: 0 20px 0 20px;
+	padding: 20px 20px 10px;
+}
+#body .feature_side .content_playerskill h3 {
+	max-width: 100%;
+    max-height: 100%;
+    height: auto;
+	width: auto\9;  /*ie8 */
+	margin: 0 20px 0 20px;
+	padding: 0 20px 0;
+}
+#body .feature_side .content_playerskill ul li {
+	margin: 0 0 15px;
 }
 /* ---------------------------------- */
-#body .in_progress div ul li span {
-	background: #181a1a url(../images/gradient3.png) repeat-x bottom left;
-	border-top: 1px solid #22272a;
-	display: block;
-}
-#body .in_progress div ul li span a {
-	color: #a7a9ac;
-	display: block;
-	margin: 0;
-	padding: 0 9px;
-	text-decoration: none;
-
-}
-#body .in_progress div ul li span a:hover {
-	color: #fff;
-}
-#body .in_progress .content {
+#body .feature_side .content {
 	background: url(../images/border.gif) repeat-x top left;
 	float: left;
 	margin: 0 0 0 19px;
@@ -493,19 +508,14 @@ body {
 	font-size: 16px;
 	font-family: 'Gill Sans';
 }	
-#body .in_progress .content ul {
+#body .feature_side .content ul {
 	padding: 16px 19px 1px;
-}
-#body .in_progress .content ul li {
-	margin: 0 0 20px;
-}
-#body .in_progress .content ul li span a {
-	font-size: 14px;
-	height: 48px;
-	line-height: 48px;
 	
 }
-#body .in_progress .aside {
+#body .feature_side .content ul li {
+	margin: 0 0 15px;
+}
+#body .feature_side .aside {
 	background: url(../images/border.gif) repeat-x top left;
 	float: left;
 	margin: 0 0 0 19px;
@@ -514,39 +524,32 @@ body {
 	font-size: 16px;
 	font-family: 'Gill Sans';
 }
-#body .in_progress .aside ul {
+#body .feature_side .aside ul {
 	padding: 16px 19px 1px;
 
 }
-#body .in_progress .aside ul li {
+#body .feature_side .aside ul li {
 	margin: 0 0 20px;
 
 }
-#body .in_progress .aside ul li span a {
-	font-size: 14px;
-	height: 48px;
-	line-height: 48px;
-
-}
-
-#body .in_progress .content .aside img{
+#body .feature_side .content .aside img{
 	font-size: 14px;
 }
 /* ---------------------------------- */
-#body .in_progress .article {
+#body .feature_side .article {
 	clear: both;
 	float: left;
 	width: 960px;
 }
-#body .in_progress .article p {
+#body .feature_side .article p {
 	font-size: 12px;
 	line-height: 24px;
 	padding: 11px 20px 0;
 }
-#body .in_progress .article p a {
+#body .feature_side .article p a {
 	color: #797979;
 }
-#body .in_progress .article p a:hover {
+#body .feature_side .article p a:hover {
 	color: #a3a3a3;
 }
 /* ------------------------------------------- */
@@ -866,26 +869,6 @@ body {
 	color: #fff;
 }
 /* ---------------------------------------- */
-#cautionid {
-	background: url(../images/caution_buttom.png) no-repeat;
-	background-size: 150px;
-	display: block;
-	float: left;
-	list-style: none;
-	margin: 15px 50px;
-	padding: 0;
-	
-	line-height: 73px;
-	height: 150px;
-	width: 150px;
-
-	text-decoration: none;
-	text-indent: -99999px;
-
-	cursor: pointer;
-	
-}
-/* ---------------------------------------- */
 #footer {
 	background: url(../images/bg-footer2.png) repeat-x bottom left;
 	margin: 0;
@@ -927,16 +910,16 @@ body {
 #footer ul #Kyoko-Musicbot a:hover {
 	background-position: -78px 0;
 }
-#footer ul #noch_offen a {
+/* #footer ul #noch_offen a {
 	background-position: 0 -78px;
 }
 #footer ul #noch_offen a:hover {
 	background-position: -78px -78px;
-}
-#footer ul #in_progress a {
+} */
+#footer ul #Kyoko-WebPage a {
 	background-position: 0 -156px;
 }
-#footer ul #in_progress a:hover {
+#footer ul #Kyoko-WebPage a:hover {
 	background-position: -78px -156px;
 }
 #footer p {
