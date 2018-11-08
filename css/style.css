@@ -251,7 +251,7 @@ body {
 #body div div .section div div p a {
 	color: #727272;
 }
-#body div div .section div div p a.more {
+/* #body div div .section div div p a.more {
 	background: url(../images/bg-more.png) no-repeat center center;
 	color: #bababa;
 	display: inline-block;
@@ -265,7 +265,7 @@ body {
 	text-decoration: none;
 	text-transform: lowercase;
 	width: 70px;
-}
+} */
 #body div div .section div div p a:hover {
 	color: #a3a3a3;
 }
@@ -524,6 +524,30 @@ body {
 #body .feature_side .content_playerskill ul li {
 	margin: 0 0 15px;
 }
+
+#body .feature_side .content_playerskill h3 a.more {
+	background: url(../images/bg-more.png) no-repeat center center;
+	background-color: green;
+	color: #ffffff;
+	display: inline-block;
+	height: 23px;
+	font-size: 10px;
+	font-weight: normal;
+	line-height: 22px;
+	margin: 0 0 0 12px;
+	padding: 0;
+	text-align: center;
+	text-decoration: none;
+	text-transform: lowercase;
+	width: 70px;
+}
+#body .feature_side .content_playerskill h3 a.more:hover{
+	background: url(../images/bg-more-hover.png) no-repeat center center;
+	/* background-color: black; */
+	color: #8aff2a;
+	font-size: 8px;
+	width: 80px;
+}
 /* ---------------------------------- */
 #body .feature_side .content {
 	background: url(../images/border.gif) repeat-x top left;
@@ -594,6 +618,7 @@ body {
 	margin: 0 -20px 0;
 	/* padding: 20px 20px 0;	 */
 }
+
 #body .about2{
 	background: url(../images/border.gif) repeat-x top left;
 	list-style: none;
@@ -604,18 +629,6 @@ body {
 	line-height: 25px;	
 }
 
-#body .about3 {
-	color: rgb(255, 255, 255);
-	background: url(../images/border.gif) repeat-x top left;
-	list-style: none;
-	padding: 0 0 50px;
-	text-transform: inherit;
-	font-family: 'Lucida Sans Unicode';
-	font-size: 20px;
-	
-	line-height: 50px;
-	
-}
 #body .about ul li h3 {
 	background: #070707 url(../images/gradient3.png) repeat-x top center;
 	border: 10px solid #22272a;
@@ -623,7 +636,7 @@ body {
 	font-family: 'Philosopher-Regular';
 	font-size: 24px;
 	font-weight: normal;
-	height: 55px;
+	height: 50px;
 	line-height: 55px;
 	margin: 0 0 1px;
 	padding: 0 19px;
@@ -682,119 +695,20 @@ body {
 	overflow: hidden;
 	/* padding: 0; */
 }
-/* #body .commands ul {
-	margin: 0;	
-} */
-/* #body .commands ul li {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-} */
-#body .commands .content {
-	/* background: url(../images/border.gif) repeat-x top left;
-	float: left;
-	margin: 0 0 0 20px;
-	padding: 0 0 0;
-	width: 610px; */
-}
-#body .commands .content ul li {
-	/* padding: 0 0 20px; */
-}
-#body .commands .content ul li .header {
-	/* background: #070707 url(../images/gradient5.png) repeat-x top center;
-	border: 1px solid #22272a;
-	color: #fff;
-	font-size: 14px;
-	line-height: 24px;
-	margin: 0 0 1px;
-	overflow: hidden;
-	padding: 10px 18px 15px; */
-}
-#body .commands .content ul li .header b {
-	/* display: inline;
-	float:left;
-	line-height: 24px;
-	margin: 0;
-	padding: 0; */
-}
-#body .commands .content ul li .header b a {
-	/* color: #fff; */
-}
-#body .commands .content ul li .header b a:hover {
-	/* color: #727272; */
-}
-#body .commands .content ul li .header span {
-	/* background: #181818;
-	border: 1px solid #22272a;
-	border-radius: 4px;
-	display: inline;
-	float: left;
-	margin: 0 0 0 34px;
-	overflow: hidden;
-	padding: 0; */
-}
-#body .commands .content ul li .header span a {
-	/* color: #bababa;
-	display: block;
-	float: left;
-	font-size: 10px;
-	height: 23px;
-	line-height: 23px;
-	margin: 0;
-	padding: 0 15px;
-	text-align: center;
-	text-decoration: none;
-	text-transform: capitalize; */
-}
-/* #body .commands .content ul li .header span a:first-child {
-	border-right: 1px solid #22272a;
-}
-#body .commands .content ul li .header span a:hover {
-	color: #fff;
-} */
-#body .commands .content ul li .article {
-	/* background: #181818;
-	border: 1px solid #22272a;
-	margin: 0;
-	overflow: hidden;
-	padding: 14px 19px 19px; */
-}
-#body .commands .content ul li .article a.figure {
-	/* border: 1px solid #22272a;
-	display: block;
-	float: left;
-	margin: 6px 20px 0 0;
-	padding: 0; */
-}
-#body .commands .content ul li .article a.figure:hover {
-	/* opacity: 0.8; */
-}
-#body .commands .content ul li .article a.figure img {
-	/* border: 1px solid #000;
-	display: block;
 
-	max-width: 100%;
-    height: auto;
-    width: auto\9; /* ie8 */
+#body .commands .about3 {
+	color: rgb(255, 255, 255);
+	/* background: url(../images/border.gif) repeat-x top left; */
+	list-style: none;
+	padding: 0 0 50px;
+	text-transform: inherit;
+	font-family: 'Lucida Sans Unicode';
+	font-size: 20px;
+	
+	line-height: 50px;
+	
 }
-#body .commands .content ul li .article p {
-	/* line-height: 24px; */
-} 
-#body .commands .content ul li .article p a.more {
-	/* background: url("../images/bg-more.png") no-repeat center center;
-	color: #bababa;
-	display: inline-block;
-	font-size: 10px;
-	font-weight: normal;
-	height: 23px;
-	line-height: 22px;
-	margin: 0;
-	padding: 0;
-	text-align: center;
-	text-decoration: none;
-	text-transform: lowercase;
-	width: 70px; */
-}
+
 #body .commands .content ul li .article p a.more:hover {
 	color: #fff;
 }
@@ -805,45 +719,7 @@ body {
 	/* padding: 3px 0 0; */
 	width: 280px;
 }
-#body .commands .sidebar div {
-	/* background: #070707 url(../images/gradient3.png) repeat-x top center;
-	border: 1px solid #22272a;
-	height: 48px;
-	margin: 0 0 1px;
-	overflow: hidden;
-	padding: 0; */
-}
-#body .commands .sidebar div span {
-	/* display: block;
-	float: left;
-	margin: 0;
-	padding: 8px 16px;
-	width: 107px; */
-}
-#body .commands .sidebar div span:first-child {
-	/* background: url(../images/border2.gif) repeat-y right top; */
-}
-#body .commands .sidebar div span a {
-	/* color: #727272;
-	display: block;
-	font-size: 14px;
-	font-weight: bold;
-	height: 30px;
-	line-height: 28px;
-	text-align: center;
-	text-decoration: none;
-	text-transform: capitalize;
-	width: 103px; */
-}
-/* #body .commands .sidebar div span a:hover {
-	color: #fff;
-}
-#body .commands .sidebar div span a.selected {
-	color: #fff;
-	background: #000;
-	border: 1px solid #22272a;
-	border-radius: 6px;
-}*/
+
 #body .commands .sidebar ul {
 	border: 1px solid #22272a;
 	background: #181818;
