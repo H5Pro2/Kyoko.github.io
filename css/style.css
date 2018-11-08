@@ -191,29 +191,54 @@ body {
 	width: 940px;
 }
 #body div div .section > div {
-	background: url(../images/border.gif) repeat-x top left;
+	/* background: url(../images/border.gif) repeat-x top left; */
 	float: left;
 	margin: 0 10px;
 	padding: 3px 0 0;
 	width: 220px;
 }
+
 #body div div .section > div:first-child {
 	width: 440px;
 }
-#body div div .section div h4 {
-	/* background: #070707 url(../images/gradient2.png) repeat-x top center; */
+/* #body div div .section div h4 {
+	background: #070707 url(../images/gradient2.png) repeat-x top center;
 	border: 1px solid #22272a;
 	color: #fff;
 	font-size: 14px;
 	line-height: 24px;
 	margin: 0 0 1px;
 	padding: 10px 19px;
-}
+} */
 #body div div .section div div {
 	background: #181818;
 	border: 1px solid #22272a;
 	margin: 0;
 	padding: 20px 19px;
+	height: 140px;
+}
+#body div div .section div div.new {
+	background: #181818;
+	border: 1px solid #22272a;
+	margin: -28px 0 0;
+	padding: 0 0;
+	height: 50px;
+	width: 280px;
+}
+#body div div .section div h3.new {
+	background: #070707 url(../images/gradient3.png) repeat-x top center;
+	border: 1px solid #22272a;
+	color: #fff;
+	font-family: 'Philosopher-Bold';
+	font-size: 16px;
+	font-weight: normal;
+	height: 50px;
+	letter-spacing: 0.07em;
+	line-height: 50px;
+	margin: 0 0 1px;
+	padding: 0 19px;
+	text-transform: uppercase;
+	width: 280px;
 }
 #body div div .section div:first-child div {
 	padding: 14px 19px 30px;
@@ -269,7 +294,8 @@ body {
 	padding: 0;
 }
 #body div div .section div div a.figure:hover {
-	opacity: 0.8;
+	opacity: 0.6;
+	border: 5px solid rgb(43, 255, 0);
 }
 #body div div .section div div a.figure img {
 	border: 1px solid #000;
@@ -279,14 +305,14 @@ body {
     height: auto;
     width: auto\9; /* ie8 */
 }
-#body div div .section div div span {
+/* #body div div .section div div span {
 	background: #181a1a url(../images/gradient4.png) repeat-x bottom left;
 	border-bottom: 1px solid #22272a;
 	border-left: 1px solid #22272a;
 	border-right: 1px solid #22272a;
 	display: block;
 	height: 38px;
-}
+} */
 #body div div .section div div span a {
 	color: #a7a9ac;
 	display: block;
@@ -910,12 +936,6 @@ body {
 #footer ul #Kyoko-Musicbot a:hover {
 	background-position: -78px 0;
 }
-/* #footer ul #noch_offen a {
-	background-position: 0 -78px;
-}
-#footer ul #noch_offen a:hover {
-	background-position: -78px -78px;
-} */
 #footer ul #Kyoko-WebPage a {
 	background-position: 0 -156px;
 }
