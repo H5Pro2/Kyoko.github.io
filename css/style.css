@@ -461,11 +461,14 @@ body {
 	color: #a3a3a3;
 }
 /* ---------------------------------- */
+#body .feature_back {
+	background: #070707 url(../images/top_background.jpg) no-repeat top center;
+	background-size: 1000px;
+	/* background-position-x: -850px; */
+	background-position-y: 600px;
+}
 #body .feature_side {
 	overflow: hidden;	
-	background: #070707 url(../images/top_background.jpg) repeat-y top center;
-	background-size: 800px;
-	background-position-y: center;
 }
 #body .feature_side div {
 	margin: 0;
