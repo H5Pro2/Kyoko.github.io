@@ -10,6 +10,19 @@
 	src: url('../fonts/Philosopher-Bold/Philosopher-Bold.woff') format('woff'), url('../fonts/Philosopher-Bold/Philosopher-Bold.ttf') format('truetype'), url('../fonts/Philosopher-Bold/Philosopher-Bold.svg') format('svg');
 }
 /* ---------------------------------------- */
+#cautionid:hover {
+	background: url(../images/caution_buttom2.png) repeat;
+	background-size: 150px;
+	float: left;
+	list-style: none;
+	margin: -30px auto ;
+	
+	line-height: 1;
+	height: 100px;
+	width: 150px;
+	cursor: pointer;
+
+}
 #cautionid {
 	background: url(../images/caution_buttom.png) repeat;
 	background-size: 150px;
