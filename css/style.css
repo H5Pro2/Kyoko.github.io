@@ -626,22 +626,35 @@ body {
 	margin: -20px -20px 0;
 	padding: 20px 20px 0;
 }
-/* #body .about ol il{
-	background: url(../images/border.gif) repeat-x top left;	
-} */
 
-#body .about2 ol{
-	margin: 0 -20px 0;
-	/* padding: 20px 20px 0;	 */
+#body .class_about_2 ol{
+	margin: 0 -20px 0px;
+	/* padding: 0 -20px 20px;	 */
 }
 
-#body .about2{
+#body .class_about_2{
 	background: url(../images/border.gif) repeat-x top left;
 	list-style: none;
 	padding: 0 0 20px;
-	text-transform: capitalize;
-	font-family: 'Philosopher-Regular';
+
+	text-transform: inherit;
+	font-family: 'Lucida Sans Unicode';
 	color: rgba(255, 255, 255, 0.650);
+	line-height: 25px;	
+}
+
+#body .class_about_3 ol{
+	margin: 0 -20px 0;
+	padding: 0 20px 0;
+}
+
+#body .class_about_3{
+	background: url(../images/border.gif) repeat-x top left;
+	list-style: none;
+	padding: 0 0 20px;
+	text-transform: inherit;
+	font-family: 'Lucida Sans Unicode';
+	color: rgba(148, 253, 29, 0.918);
 	line-height: 25px;	
 }
 
@@ -652,7 +665,7 @@ body {
 	font-family: 'Philosopher-Regular';
 	font-size: 24px;
 	font-weight: normal;
-	height: 50px;
+	/* height: auto; */
 	line-height: 55px;
 	margin: 0 0 1px;
 	padding: 0 19px;
@@ -663,8 +676,8 @@ body {
 	background: #181818;
 	border: 1px solid #22272a;
 	margin: 0;
-	min-height: 250px;
-	padding: 11px 19px;
+	min-height: auto;
+	padding: 15px 15px;
 	
 }
 #body .about ul li div p {
@@ -712,7 +725,7 @@ body {
 	/* padding: 0; */
 }
 
-#body .commands .about3 {
+#body .commands .commands_about {
 	color: rgb(255, 255, 255);
 	/* background: url(../images/border.gif) repeat-x top left; */
 	list-style: none;
